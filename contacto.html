@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUVR - Contacto</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #6495ED;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; /* Nuevo */
+        }
+        header img {
+            height: 200px; /* Ajusta el tamaño del logo según sea necesario */
+        }
+        header h1 {
+            margin: 0; /* Elimina los márgenes predeterminados */
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .contact {
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 50px;
+            text-align: center;
+        }
+        .contact h2 {
+            color: #6495ED;
+        }
+        .contact p {
+            margin-bottom: 20px;
+        }
+        .contact img {
+            max-width: 300px;
+            margin-bottom: 20px;
+            border-radius: 50%; /* Añade bordes redondeados */
+        }
+
+        footer {
+            background-color: #6495ED;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed; /* Fija el pie de página */
+            bottom: 0; /* Lo coloca en la parte inferior */
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <img src="eduvr_logo.png" alt="Logo de EDUVR">
+        <h1>EDUVR - Contacto</h1>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="pagina_principal.html">Inicio</a>
+        <a href="caracteristicas.html">Características</a>
+        <a href="licencias.html">Licencias</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <!-- Información de contacto -->
+    <div class="contact" id="contact">
+        <h2>¡Contáctanos!</h2>
+        <div class="contact-info">
+            <!-- Información de la primera persona -->
+            <div class="person-info">
+                <h3>Holman Galindo Guerrero</h3>
+                <p>Tu correo electrónico: candymalho@gmail.com</p>
+                <p>Tu número de teléfono: +57 314 2015187</p>
+            </div>
+            <!-- Información de la segunda persona -->
+            <div class="person-info">
+                <h3>Cristian Miguel Manga Hernandez</h3>
+                <p>Correo electrónico de tu compañero: thecrishman@gmail.com</p>
+                <p>Número de teléfono de tu compañero: + 57 3229140020</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 EDUVR. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

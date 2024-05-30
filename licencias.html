@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUVR - Licencias</title>
+    <style>
+  
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh; /* Establece la altura mínima del cuerpo como 100% del viewport height */
+            display: flex;
+            flex-direction: column; /* Asegura que los elementos flexibles se apilen verticalmente */
+        }
+        header {
+            background-color: #6495ED;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; /* Nuevo */
+        }
+        header img {
+            height: 200px; /* Ajusta el tamaño del logo según sea necesario */
+        }
+        header h1 {
+            margin: 0; /* Elimina los márgenes predeterminados */
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+   
+        .license {
+            text-align: center;
+            width: calc(50% - 20px); /* Nuevo: 50% para dos columnas y ajuste de márgenes */
+            margin: 10px; /* Añadido para espacio entre elementos */
+            cursor: pointer; /* Nuevo */
+            margin-left: 380px;
+        }
+        .license:hover {
+            background-color: #ddd; /* Cambia el color de fondo al pasar el ratón */
+        }
+        .license h2 {
+            color: #6495ED;
+        }
+        footer {
+            background-color: #6495ED;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .license img {
+            max-width: 250px; /* Ajusta el tamaño máximo de la imagen */
+            margin-bottom: 10px; /* Ajusta el margen inferior */
+        }
+
+        /* Sticky footer */
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .content {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Envoltura del contenido -->
+    <div class="wrapper">
+        <!-- Cabecera -->
+        <header>
+            <img src="eduvr_logo.png" alt="Logo de EDUVR">
+            <h1>EDUVR - Licencias</h1>
+        </header>
+
+        <!-- Barra de navegación -->
+        <nav>
+            <a href="pagina_principal.html">Inicio</a>
+            <a href="caracteristicas.html">Características</a>
+            <a href="#licenses">Licencias</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <!-- Licencias -->
+            <div class="license">
+                <img src="colegios.png" alt="Licencia para Colegios" class="licen">
+                <h2>Licencia para Colegios</h2>
+                <p>Obtén herramientas y recursos exclusivos para potenciar la enseñanza en la institucion. Duración: 1 año escolar</p>
+                <p>Precio: $1000 USD</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 EDUVR. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

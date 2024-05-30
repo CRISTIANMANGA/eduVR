@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUVR - Educación en Realidad Virtual</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #6495ED;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            height: 100px; 
+        }
+        header h1 {
+            margin: 0; 
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("realidad\ virtual.jpg") no-repeat center center fixed; 
+            background-size: cover;
+            color: white;
+            padding: 100px 20px;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h2 {
+            
+            margin: 20px 0;
+            font-size: 2.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #6495ED;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #4169E1;
+        }
+
+        .features, .licenses {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            background-color: #fff;
+            flex-wrap: wrap;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .feature, .license {
+            text-align: center;
+            width: calc(33.333% - 20px);
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .feature:hover, .license:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-5px);
+        }
+        .feature h2, .license h2 {
+            color: #6495ED;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .feature p, .license p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+        .contact {
+            background-color: #6495ED;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact input, .contact textarea {
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+        }
+        .contact button {
+            background-color: #4169E1;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .contact button:hover {
+            background-color: #3753a0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        /* Ventanas emergentes */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        .popup-content {
+            text-align: center;
+        }
+        .popup-content h2 {
+            color: #6495ED;
+        }
+        .popup-content p {
+            color: #333;
+        }
+        .popup-content button {
+            background-color: #6495ED;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .popup-content button:hover {
+            background-color: #4169E1;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="eduvr_logo.png" alt="Logo de EDUVR">
+        <h1>EDUVR - Educación en Realidad Virtual</h1>
+    </header>
+    <nav>
+        <a href="pagina_principal.html">Inicio</a>
+        <a href="caracteristicas.html">Características</a>
+        <a href="licencias.html">Licencias</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="hero">
+        <div class="hero-content">
+            <h2>Explora un Nuevo Mundo de Aprendizaje con EDUVR</h2>
+            <p>Sumérgete en experiencias educativas envolventes que te transportan a lugares lejanos, épocas históricas y mundos imaginarios.</p>
+            <a href="#features" class="btn">Descubre Más</a>
+        </div>
+    </div>
+    
+    
+    <div class="features" id="features">
+        <div class="feature" id="inmersionTotal">
+            <h2>Inmersión Total</h2>
+            <p>Experimenta el aprendizaje de una manera completamente nueva.</p>
+        </div>
+        <div class="feature" id="interactividad">
+            <h2>Interactividad</h2>
+            <p>Interactúa con el contenido educativo de manera dinámica.</p>
+        </div>
+        <div class="feature" id="accesibilidad">
+            <h2>Accesibilidad</h2>
+            <p>Accede a materiales educativos desde cualquier lugar del mundo.</p>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+            <h2>Contacto</h2>
+            <p>También puedes contactarnos a través de WhatsApp haciendo clic <a href="whatsapp://send?phone=++57 3043297301">aquí</a>.</p>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        
+    </div>
+    <footer>
+        <p>&copy; 2024 EDUVR. Todos los derechos reservados.</p>
+    </footer>
+   
+    <!-- Ventanas emergentes -->
+<div id="popupInmersion" class="popup">
+    <div class="popup-content">
+        <h2>Inmersión Total</h2>
+        <p>La inmersión total te sumerge completamente en entornos virtuales realistas, permitiéndote vivir experiencias educativas envolventes y profundas. A través de la realidad virtual, podrás explorar lugares remotos, interactuar con objetos y personas simuladas, y experimentar situaciones que de otra manera serían difíciles de recrear en un entorno tradicional. Esta tecnología revolucionaria redefine la forma en que aprendemos, ofreciendo una experiencia única y memorable.</p>
+        <button onclick="closePopup('popupInmersion')">Cerrar</button>
+    </div>
+</div>
+
+<div id="popupInteractividad" class="popup">
+    <div class="popup-content">
+        <h2>Interactividad</h2>
+        <p>La interactividad es una característica fundamental de la educación en realidad virtual. Te permite participar activamente en el proceso de aprendizaje, interactuando con el contenido de forma dinámica y personalizada. A través de la manipulación de objetos virtuales, la resolución de problemas y la toma de decisiones en entornos simulados, desarrollarás habilidades prácticas y cognitivas de manera efectiva. La interactividad en la educación virtual promueve el compromiso y la participación, mejorando así el proceso de aprendizaje.</p>
+        <button onclick="closePopup('popupInteractividad')">Cerrar</button>
+    </div>
+</div>
+
+<div id="popupAccesibilidad" class="popup">
+    <div class="popup-content">
+        <h2>Accesibilidad</h2>
+        <p>La accesibilidad en la educación en realidad virtual garantiza que el aprendizaje sea inclusivo y equitativo para todos. A través de esta tecnología innovadora, se eliminan barreras físicas y geográficas, permitiendo que los estudiantes accedan a materiales educativos desde cualquier lugar del mundo. Además, la adaptabilidad de los entornos virtuales facilita la personalización del aprendizaje, atendiendo a las necesidades individuales de cada estudiante. La accesibilidad en la educación virtual promueve la igualdad de oportunidades y fomenta la diversidad en el proceso educativo.</p>
+        <button onclick="closePopup('popupAccesibilidad')">Cerrar</button>
+    </div>
+</div>
+
+<div id="popupEstudiantes" class="popup">
+    <div class="popup-content">
+        <h2>Licencia para Estudiantes</h2>
+        <p>La licencia para estudiantes brinda acceso a una amplia gama de programas y beneficios diseñados específicamente para mejorar el proceso de aprendizaje. Desde simulaciones interactivas hasta recursos educativos especializados, esta licencia ofrece herramientas poderosas para enriquecer la experiencia educativa. Los estudiantes pueden explorar conceptos complejos de manera práctica, colaborar con sus compañeros en entornos virtuales y desarrollar habilidades relevantes para el mundo real. Con la licencia para estudiantes, el aprendizaje se convierte en una experiencia estimulante y enriquecedora.</p>
+        <button onclick="closePopup('popupEstudiantes')">Cerrar</button>
+    </div>
+</div>
+
+<div id="popupProfesores" class="popup">
+    <div class="popup-content">
+        <h2>Licencia para Profesores</h2>
+        <p>La licencia para profesores ofrece acceso exclusivo a herramientas y recursos diseñados para potenciar la enseñanza y mejorar la experiencia educativa. Desde la creación de contenido educativo personalizado hasta la gestión de clases virtuales, esta licencia proporciona las herramientas necesarias para impulsar la innovación en el aula. Los profesores pueden diseñar experiencias de aprendizaje interactivas, evaluar el progreso de los estudiantes de manera eficiente y colaborar con otros educadores para compartir mejores prácticas. Con la licencia para profesores, la enseñanza se convierte en un proceso dinámico y efectivo.</p>
+        <button onclick="closePopup('popupProfesores')">Cerrar</button>
+    </div>
+</div>
+
+   
+    <script>
+        // Función para cerrar la ventana emergente
+        function closePopup(popupId) {
+            document.getElementById(popupId).style.display = 'none';
+        }
+
+        // Obtener elementos de inmersión total, interactividad, accesibilidad, licencia de estudiantes y licencia de profesores
+        const inmersionTotal = document.getElementById('inmersionTotal');
+        const interactividad = document.getElementById('interactividad');
+        const accesibilidad = document.getElementById('accesibilidad');
+        const licenciaEstudiantes = document.getElementById('licenciaEstudiantes');
+        const licenciaProfesores = document.getElementById('licenciaProfesores');
+
+        // Mostrar las ventanas emergentes al hacer clic en los elementos correspondientes
+        inmersionTotal.addEventListener('click', () => {
+            document.getElementById('popupInmersion').style.display = 'block';
+        });
+
+        interactividad.addEventListener('click', () => {
+            document.getElementById('popupInteractividad').style.display = 'block';
+        });
+
+        accesibilidad.addEventListener('click', () => {
+            document.getElementById('popupAccesibilidad').style.display = 'block';
+        });
+
+        licenciaEstudiantes.addEventListener('click', () => {
+            document.getElementById('popupEstudiantes').style.display = 'block';
+        });
+
+        licenciaProfesores.addEventListener('click', () => {
+            document.getElementById('popupProfesores').style.display = 'block';
+        });
+    </script>
+</body>``
+</html>

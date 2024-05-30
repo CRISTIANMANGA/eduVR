@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUVR - Características</title>
+    <style>
+        
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #6495ED;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; /* Nuevo */
+        }
+        header img {
+            height: 200px; /* Ajusta el tamaño del logo según sea necesario */
+        }
+        header h1 {
+            margin: 0; /* Elimina los márgenes predeterminados */
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .hero {
+            position: relative;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(to bottom, rgba(6, 24, 38, 0.5), rgba(6, 24, 38, 0.9)), #4B3B60; /* Cambia el color de fondo a un morado desvanecido */
+        }
+        .hero img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .features, .licenses {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            background-color: #f4f4f4;
+            flex-wrap: wrap; /* Nuevo para permitir que los elementos se envuelvan en pantallas más pequeñas */
+        }
+        .feature, .license {
+            text-align: center;
+            width: calc(33.333% - 20px); /* Nuevo: 33.333% para tres columnas y ajuste de márgenes */
+            margin: 10px; /* Añadido para espacio entre elementos */
+            cursor: pointer; /* Nuevo */
+        }
+        .feature:hover, .license:hover {
+            background-color: #ddd; /* Cambia el color de fondo al pasar el ratón */
+        }
+        .feature h2, .license h2 {
+            color: #6495ED;
+        }
+        .contact {
+            background-color: #333;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact input, .contact textarea {
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+        }
+        .contact button {
+            background-color: #6495ED;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background-color: #5A8FCC;
+        }
+        footer {
+            background-color: #6495ED;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <img src="eduvr_logo.png" alt="Logo de EDUVR">
+        <h1>EDUR - Características</h1>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="pagina_principal.html">Inicio</a>
+        <a href="caracteristicas.html">Características</a>
+        <a href="licencias.html">Licencias</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+<!-- Características del programa -->
+<div class="features">
+        <div class="feature">
+            <h2>Realidad Virtual Inmersiva</h2>
+            <p>Sumérgete en experiencias educativas envolventes que te transportan a diferentes lugares y épocas, facilitando un aprendizaje memorable y significativo.</p>
+        </div>
+        <div class="feature">
+            <h2>Interactividad Dinámica</h2>
+            <p>Explora el contenido educativo de manera activa y participativa, interactuando con simulaciones, modelos y actividades prácticas que refuerzan tu comprensión.</p>
+        </div>
+        <div class="feature">
+            <h2>Acceso Universal</h2>
+            <p>Disfruta de la educación en cualquier momento y lugar, eliminando barreras geográficas y permitiéndote acceder a materiales educativos desde cualquier dispositivo compatible con realidad virtual.</p>
+        </div>
+        <div class="feature">
+            <h2>Personalización del Aprendizaje</h2>
+            <p>Adapta tu experiencia educativa según tus necesidades y preferencias, explorando contenidos a tu propio ritmo y profundizando en áreas de interés específicas.</p>
+        </div>
+        <div class="feature">
+            <h2>Colaboración Global</h2>
+            <p>Conecta con estudiantes y profesores de todo el mundo, participando en proyectos colaborativos y experiencias de aprendizaje cooperativo que enriquecen tu perspectiva y habilidades.</p>
+        </div>
+    </div>
+</body>
+</html>
